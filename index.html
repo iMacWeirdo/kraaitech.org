@@ -24,6 +24,9 @@
       font-family: 'Roboto', sans-serif;
       background: var(--offwhite);
       color: var(--blackish);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -61,6 +64,7 @@
       padding: 4rem 2rem;
       text-align: center;
       background: linear-gradient(to bottom right, #ffffff, #e9f9ea);
+      flex: 1; /* Allow hero section to expand */
     }
 
     .hero h1 {
@@ -81,7 +85,6 @@
       color: white;
       text-align: center;
       padding: 1rem 2rem;
-      margin-top: 4rem;
     }
 
     @media (max-width: 600px) {
