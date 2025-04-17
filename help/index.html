@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help/Contact - Kraai Technology Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
+  <style>
+    :root {
+      --green: #1f7a1f;
+      --green-dark: #145214;
+      --offwhite: #f6f6f6;
+      --blackish: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--offwhite);
+      color: var(--blackish);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--green);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #cdeac0;
+    }
+
+    .contact {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to bottom right, #ffffff, #e9f9ea);
+      flex: 1;
+    }
+
+    .contact h1 {
+      font-size: 2.5rem;
+      color: var(--green-dark);
+      margin-bottom: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      background-color: var(--green);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: var(--green-dark);
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KraaiTech</div>
+    <nav>
+      <a href="/services/">Services</a>
+      <a href="/store/">Store</a>
+      <a href="https://customer.kraaitech.org/" target="_blank">Customer</a>
+      <a href="https://employee.kraaitech.org/" target="_blank">Employee</a>
+      <a href="/help/">Help/Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Help & Contact</h1>
+    <p>If you have any questions or need assistance, please fill out the form below, and we will get back to you as soon as possible.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Kraai Technology Services. All rights reserved.
+  </footer>
+</body>
+</html>
