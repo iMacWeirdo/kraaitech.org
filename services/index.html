@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Kraai Technology Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap">
+  <style>
+    :root {
+      --green: #1f7a1f;
+      --green-dark: #145214;
+      --offwhite: #f6f6f6;
+      --blackish: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--offwhite);
+      color: var(--blackish);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--green);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #cdeac0;
+    }
+
+    .services {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to bottom right, #ffffff, #e9f9ea);
+      flex: 1;
+    }
+
+    .services h1 {
+      font-size: 2.5rem;
+      color: var(--green-dark);
+      margin-bottom: 2rem;
+    }
+
+    .service-item {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .service-item h2 {
+      font-size: 1.8rem;
+      color: var(--green-dark);
+    }
+
+    .service-item p {
+      font-size: 1rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KraaiTech</div>
+    <nav>
+      <a href="/services/">Services</a>
+      <a href="/store/">Store</a>
+      <a href="https://customer.kraaitech.org/" target="_blank">Customer</a>
+      <a href="https://employee.kraaitech.org/" target="_blank">Employee</a>
+      <a href="/help/">Help/Contact</a>
+    </nav>
+  </header>
+
+  <section class="services">
+    <h1>Our Services</h1>
+    <div class="service-item">
+      <h2>IT Solutions</h2>
+      <p>We provide comprehensive IT solutions tailored to your business needs, ensuring operational efficiency and reliability.</p>
+    </div>
+    <div class="service-item">
+      <h2>Tech Repairs</h2>
+      <p>Our expert technicians are here to handle all your tech repair needs, from hardware issues to software troubleshooting.</p>
+    </div>
+    <div class="service-item">
+      <h2>Smart Support</h2>
+      <p>Get 24/7 support from our dedicated team, ready to assist you with any technical queries or issues you may have.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kraai Technology Services. All rights reserved.
+  </footer>
+</body>
+</html>
